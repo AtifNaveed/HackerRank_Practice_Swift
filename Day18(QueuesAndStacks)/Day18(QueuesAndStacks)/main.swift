@@ -35,10 +35,18 @@ class Solution {
 
 }
 
+// LIFO Stack
+// FIFO Queue
+
+// read the string s.
+// let s = readLine()!
+
 let s = "madam"
 
+// create the Solution class object p.
 let obj = Solution()
 
+// push/enqueue all the characters of string s to stack.
 for character in s {
     obj.pushCharacter(ch: character)
     obj.enqueueCharacter(ch: character)
@@ -47,6 +55,9 @@ for character in s {
 
 var isPalindrome = true
 
+// pop the top character from stack.
+// dequeue the first character from queue.
+// compare both the characters.
 for _ in 0..<(s.count / 2) {
     if obj.popCharacter() != obj.dequeueCharacter() {
         isPalindrome = false
@@ -55,6 +66,7 @@ for _ in 0..<(s.count / 2) {
     }
 }
 
+// finally print whether string s is palindrome or not.
 if isPalindrome {
     print("The word, \(s), is a palindrome.")
 } else {
