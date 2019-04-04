@@ -9,14 +9,14 @@
 import Foundation
 
 //// read the integer n
-//let n = Int(readLine()!)!
+let n = Int(readLine()!)!
 //
 //// read the array
-//let arr = readLine()!.components(separatedBy: " ").map{ Int($0)! }
+let arr = readLine()!.components(separatedBy: " ").map{ Int($0)! }
 
 
-let n = 3
-let arr = [1, 2, 3]
+//let n = 3
+//let arr = [1, 2, 3]
 
 var numSwaps = 0
 var sortArray = arr
